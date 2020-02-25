@@ -1,24 +1,27 @@
 ## beam formulae
 import numpy as np
 
-class beam_formulae:
 
-    def circ_area(diameter):
-        A = np.pi*(diameter/2)**2
-        return A
+def circle_area(diameter):
+    area = np.pi * (diameter / 2) ** 2
+    return area
 
-    def square_area(length,width):
-        A = length*width
-        return A
 
-    def P_result(distributed_load,x):
-        P_res = distributed_load*x
-        return P_res
+def square_area(length, width):
+    area = length * width
+    return area
 
-    def moment(F,x_arm):
-        M = F*x_arm
-        return M
-    
-    def stress(moment, r):
-        sigma = (moment * r)/(1/4*np.pi*r**4)
-        return sigma
+
+def p_result(distributed_load, x):
+    p_res = distributed_load * x
+    return p_res
+
+
+def moment(f, x_arm):
+    m = f * x_arm
+    return m
+
+
+def stress(moment_sum, r):
+    sig = (moment_sum * r) / (1 / 4 * np.pi * r ** 4)
+    return sig
