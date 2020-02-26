@@ -79,14 +79,5 @@ par(mypar)
 
 dev.off()
 ####################################################################
-
-
-#plot(dat$temp_degC,dat$peak_stressMPa)
-# 
-# 
-# 
-# mypar2 <- par(pty='m', mfrow=c(2,2),cex=1, lend=2, lwd=lw18)
-# plot(fit)
-# par(mypar2)
-# dev.off()
-
+# EOF
+####################################################################
