@@ -8,9 +8,9 @@ library(gstat)
 ####################################################################
 #  DATA IMPORT  
 ####################################################################
-file_name <- "/data/sig_t-output.xlsx"
+file_name <- "data/sig_t-output.xlsx"
 
-dat <- read_excel(paste0(temp_path,file_name), na="")
+dat <- read_excel(paste0(file_name), na="")
 dat_G_INT <- subset(dat, break_type == "INT" | break_type == "INT*")
 dat_G_MID <- subset(dat, break_type == "MID")
 

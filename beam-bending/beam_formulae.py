@@ -1,4 +1,4 @@
-## beam formulae
+# Module file: beam_formulae.py
 import numpy as np
 
 
